@@ -1,0 +1,15 @@
+!Run googletest: 
+  /VSTPLUGIN1>cd build
+  /build>ctest
+
+
+!Build the template:
+  /VSTPLUGIN1>cmake --build build
+#                           ^ 2nd 'build' refers to the project folder named: "build" 
+#                             (as again below)
+
+!cpm build:
+  /VSTPLUGIN1>cmake -S . -B build
+#                           ^ I have no idea what the difference between these two commands is.
+
+!How to PUSH to project files to GITHUB:
